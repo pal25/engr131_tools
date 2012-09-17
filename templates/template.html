@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+	{% for student in students %}
+		<div id="titlebox">
+			Email: {{student.name}} ({{student.sid}})<br>
+	
+			{% for program in student.code %}
+				<div id="program_title_border">
+					<div id="program_title_box">Filename: {{program.file}}</div>
+				</div>
+				
+				<div id="codebox_border">
+					<div id="codebox">{{program.content}}</div>
+				</div>
+			{% endfor %}	
+		</div>	
+	{% endfor %}	
+	</body>
+</html>

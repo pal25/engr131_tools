@@ -1,0 +1,776 @@
+<html>
+	<head>
+		<link href="style2.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+	
+		<div class="content">
+			Email: Li, Ziqian (3262566)<br>
+
+			
+				Filename: 3262566_CalculateSum.m<br>
+				<pre class="codeinput"><b>1</b>    % (Ziqian Li), (zxl238)
+<b>2</b>    sum = 0;
+<b>3</b>    quantaty = input('How many numbers?');
+<b>4</b>    for i = 1:quantaty;
+<b>5</b>        sum = sum + input('Enter a number:');
+<b>6</b>    end
+<b>7</b>    fprintf('The sum is %.1f.\n', sum);</pre>
+			
+				Filename: 3262566_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    % (Ziqian Li), (zxl238)
+<b>2</b>    function printAverage(quantity)
+<b>3</b>    numbers = rand(1, quantity)
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1:quantity
+<b>6</b>        sum = sum + numbers(i);
+<b>7</b>    end
+<b>8</b>    average = sum / quantity;
+<b>9</b>    fprintf('The average is %.4f.\n', average)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: jaysa.withey@case.edu (3107279)<br>
+
+			
+				Filename: 3107279_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    %Jaysa Withey, jlw181
+<b>2</b>    % Finding the average of random numbers
+<b>3</b>    function printAverage (size) 
+<b>4</b>    sum = 0;
+<b>5</b>    avr = rand (size, 1)
+<b>6</b>    for i = 1 : size 
+<b>7</b>        sum = sum + avr(i);
+<b>8</b>    end
+<b>9</b>    fprintf (' The average is %.4f\n',sum/size )</pre>
+			
+				Filename: 3107279_prob3.m<br>
+				<pre class="codeinput"><b>1</b>    % Jaysa Withey, jlw181
+<b>2</b>    %Asks user for a quantity of numbers to be summed, using a "for" loop.
+<b>3</b>    sum = 0; % Cumulative sum
+<b>4</b>    num = input ( ' How many numbers? ' );
+<b>5</b>    for i = 1:num 
+<b>6</b>    a = input ( ' Enter a number:');
+<b>7</b>      sum = sum + a;
+<b>8</b>    end 
+<b>9</b>    fprintf ( ' The sum is %d.0\n ', sum );
+</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: drew.weibel@case.edu (3107278)<br>
+
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: jean.castillo@case.edu (3107259)<br>
+
+			
+				Filename: 3107259_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    % jean castillo (jpc87)
+<b>2</b>    function printAverage(s)
+<b>3</b>    %Compute the average of a set number of random numbers
+<b>4</b>    numbers = rand(1,s)
+<b>5</b>    data = numbers;
+<b>6</b>    sum = 0;
+<b>7</b>    for i=1:s
+<b>8</b>        sum = sum + data(i);
+<b>9</b>    end
+<b>10</b>    a = sum/s;
+<b>11</b>    fprintf('The average is %.4f.\n',a)
+<b>12</b>    end</pre>
+			
+				Filename: 3107259_loopsum.m<br>
+				<pre class="codeinput"><b>1</b>    %Jean Castillo (jpc87)
+<b>2</b>    clear
+<b>3</b>    n=input('How many numbers? ');
+<b>4</b>    sum=0;
+<b>5</b>    for i=1:n
+<b>6</b>        a=input('Enter a number: ');
+<b>7</b>        sum=sum+a;
+<b>8</b>    end
+<b>9</b>    fprintf('The sum is %.1f.\n', sum)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: andrew.bollinger@case.edu (3107258)<br>
+
+			
+				Filename: 3107258_NumberAdding.m<br>
+				<pre class="codeinput"><b>1</b>    % Andrew Bollinger ajb218
+<b>2</b>    range = input('How many numbers?: '); % amount of numbers to be added
+<b>3</b>    sum = 0; % Cumulative sum
+<b>4</b>    for i = 1:range
+<b>5</b>        sum = sum + input('Enter a number: ');
+<b>6</b>    end
+<b>7</b>    fprintf('The sum is %d \n' , sum)</pre>
+			
+				Filename: 3107258_average.m<br>
+				<pre class="codeinput"><b>1</b>    %Andrew Bollinger ajb218
+<b>2</b>    function average(number)
+<b>3</b>    numbers = rand(number , 1)
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1:number
+<b>6</b>        sum = sum + numbers(i);
+<b>7</b>    end
+<b>8</b>    average = (sum / number);
+<b>9</b>    fprintf('The average is %f \n' , average)
+</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: david.miranda@case.edu (3107271)<br>
+
+			
+				Filename: 3107271_problem1.m<br>
+				<pre class="codeinput"><b>1</b>    % David Miranda, djm218
+<b>2</b>    clear
+<b>3</b>    sum = 0;
+<b>4</b>    number = input('How many numbers? ');
+<b>5</b>    for i = 1:number
+<b>6</b>        n = input('Enter a number: ');
+<b>7</b>        sum = sum + n;
+<b>8</b>    end
+<b>9</b>    fprintf('The sum is %.2f.\n', sum)</pre>
+			
+				Filename: 3107271_randomAvg.m<br>
+				<pre class="codeinput"><b>1</b>    % David Miranda, djm218
+<b>2</b>    function num = randomAvg(size)
+<b>3</b>    r = []; % empty array
+<b>4</b>    sum = 0;
+<b>5</b>    
+<b>6</b>    for i = 1:size
+<b>7</b>        r(i) = rand;
+<b>8</b>        sum = sum + r(i);
+<b>9</b>        % r(i) = rand; This adds a random number to the empty array,
+<b>10</b>        % regardless of the size or value of the array. Thus, it will come out
+<b>11</b>        % as a row vector instead of a column vector.
+<b>12</b>    end
+<b>13</b>    
+<b>14</b>    disp('numbers =')
+<b>15</b>    disp(r)
+<b>16</b>    avg = sum / size;
+<b>17</b>    fprintf('The average is %.3f.\n', avg)
+<b>18</b>    end
+<b>19</b>    
+<b>20</b>    % Comment:
+<b>21</b>    % I would expect the average to be around .500. Some averages were around
+<b>22</b>    % that value (.510, .502, .460, etc.). Since the random number generator is
+<b>23</b>    % based on a human created algorithm, "rand" is not TRUELY random. The 
+<b>24</b>    % averages would be closer to .500/.499 when more loops are run since the 
+<b>25</b>    % algorithm is based on a "true" average.</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: peter.meyerhofer@case.edu (3107270)<br>
+
+			
+				Filename: 3107270_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    function printAverage(howMany)
+<b>2</b>    %Peter Meyerhofer, pdm31
+<b>3</b>    
+<b>4</b>    numbers = rand(1, howMany)
+<b>5</b>    
+<b>6</b>    sum = 0;
+<b>7</b>    for i = 1:howMany
+<b>8</b>        sum = sum + numbers(i);
+<b>9</b>    end
+<b>10</b>    
+<b>11</b>    average = sum / howMany;
+<b>12</b>    fprintf('The average is %f\n', average)
+<b>13</b>    end</pre>
+			
+				Filename: 3107270_problem1.m<br>
+				<pre class="codeinput"><b>1</b>    %Peter Meyerhofer, pdm31
+<b>2</b>    howMany = input('How many numbers? ');
+<b>3</b>    
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1:howMany
+<b>6</b>        num = input('Enter a number: ');
+<b>7</b>        sum = sum + num;
+<b>8</b>    end
+<b>9</b>    fprintf('The sum is %f\n', sum)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: kenneth.pederson@case.edu (3107273)<br>
+
+			
+				Filename: 3107273_printaverage.m<br>
+				<pre class="codeinput"><b>1</b>    function printaverage(size)
+<b>2</b>    num = rand(size,1);
+<b>3</b>    a = sum(num);
+<b>4</b>    b = a / size;
+<b>5</b>    c = 'numbers';
+<b>6</b>    disp(c)
+<b>7</b>    disp(num)
+<b>8</b>    disp(b)
+</pre>
+			
+				Filename: 3107273_problem1lab3.m<br>
+				<pre class="codeinput"><b>1</b>    %Kenneth Pederson kjp60
+<b>2</b>    a = input('how many numbers? ');
+<b>3</b>    sum = 0;
+<b>4</b>    for i = 1:a;
+<b>5</b>        c = input('enter a number: ');
+<b>6</b>        sum = sum + c;
+<b>7</b>    end
+<b>8</b>    fprintf('the sum is %.f\n', sum)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: jayson.okimoto@case.edu (3107272)<br>
+
+			
+				Filename: 3107272_L3Q1.m<br>
+				<pre class="codeinput"><b>1</b>    % Jayson Okimoto jeo34
+<b>2</b>    clear
+<b>3</b>    n = input('How many numbers?');
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1:n
+<b>6</b>        number = input('Enter a number:');
+<b>7</b>        sum = sum + number;
+<b>8</b>    end
+<b>9</b>    fprintf ('The sum is %f\n.',sum)</pre>
+			
+				Filename: 3107272_L3Q2.m<br>
+				<pre class="codeinput"><b>1</b>    % Jayson Okimoto jeo34
+<b>2</b>    clear
+<b>3</b>    num = rand(5, 1)
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1:length(num)
+<b>6</b>        sum = sum + num(i);
+<b>7</b>    end
+<b>8</b>    average = sum / length(num);
+<b>9</b>    fprintf ('The average is %f\n', average)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: jung.shin@case.edu (3107275)<br>
+
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: veronica.rivard@case.edu (3107274)<br>
+
+			
+				Filename: 3107274_InputSum.m<br>
+				<pre class="codeinput"><b>1</b>    % Veronica Rivard  vlr18
+<b>2</b>    clear
+<b>3</b>    n = input ('How many numbers?');
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1:n
+<b>6</b>        i = input ('Enter a number');
+<b>7</b>        sum = sum + i;
+<b>8</b>    end
+<b>9</b>    disp(sum)</pre>
+			
+				Filename: 3107274_AverageRandomNumbers.m<br>
+				<pre class="codeinput"><b>1</b>    % Veronica Rivard   vlr18
+<b>2</b>    function mean = average (x)
+<b>3</b>    mean = 0;
+<b>4</b>    value = rand(x, 1)
+<b>5</b>    sum = 0;
+<b>6</b>    for f = 1:length(value)
+<b>7</b>        sum = sum + value(f);
+<b>8</b>    end
+<b>9</b>    mean = sum / x</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: jiawen.wang@case.edu (3107277)<br>
+
+			
+				Filename: 3107277_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    % Jiawen Wang, jxw577
+<b>2</b>    function printAverage(n)
+<b>3</b>    num = rand(n, 1)
+<b>4</b>    data = num;
+<b>5</b>    sum = 0;
+<b>6</b>    for i = 1:length(data)
+<b>7</b>        sum = sum + data(i);
+<b>8</b>    end
+<b>9</b>    AverageSum = sum / n;
+<b>10</b>    fprintf('The average is %.4f.\n', AverageSum)</pre>
+			
+				Filename: 3107277_PartB_1.m<br>
+				<pre class="codeinput"><b>1</b>    % Jiawen Wang, jxw577
+<b>2</b>    x = input('How many number? ');
+<b>3</b>    sum = 0;
+<b>4</b>    for i = 1:x
+<b>5</b>        i = input('Enter a number: ');
+<b>6</b>        sum = sum + i;
+<b>7</b>    end
+<b>8</b>    fprintf('The sum is %.1f\n', sum)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: aaron.tam@case.edu (3107276)<br>
+
+			
+				Filename: 3107276_printaverage.m<br>
+				<pre class="codeinput"><b>1</b>    %Aaron Tam act48
+<b>2</b>    function printaverage ( n )
+<b>3</b>    numbers = rand ( n , 1 ) 
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1 : n
+<b>6</b>        sum = sum + numbers ( i );
+<b>7</b>    end
+<b>8</b>    average = ( sum / n );
+<b>9</b>    fprintf(' The average is %f.\n', average )
+<b>10</b>    
+</pre>
+			
+				Filename: 3107276_question1.m<br>
+				<pre class="codeinput"><b>1</b>    % Aaron Tam act48
+<b>2</b>    clear
+<b>3</b>    sum = 0 ;
+<b>4</b>    n = input ( ' How many numbers? ' );
+<b>5</b>    for iv = 1 : n
+<b>6</b>        a = input ( ' Enter a number: ' );
+<b>7</b>        sum = sum + a;
+<b>8</b>    end;
+<b>9</b>    fprintf ( ' The sum is %.1f.\n', sum )
+</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: nicholas.lees@case.edu (3107266)<br>
+
+			
+				Filename: 3107266_lab3_1B.m<br>
+				<pre class="codeinput"><b>1</b>    % Nicholas Lees, nal43
+<b>2</b>    clear
+<b>3</b>    sum = 0;
+<b>4</b>    range = input ('How many numbers?: ');
+<b>5</b>    for i = 1:range
+<b>6</b>       x = input ('Enter a number: ');
+<b>7</b>      sum = sum + x;
+<b>8</b>    end
+<b>9</b>    fprintf ('The sum is %f.\n', sum)</pre>
+			
+				Filename: 3107266_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    function [numbers, average] = printAverage(size);
+<b>2</b>    
+<b>3</b>    numbers = rand(size,1);
+<b>4</b>    
+<b>5</b>    for i = 1 : size
+<b>6</b>        total(i) = sum( numbers( 1:i ) );
+<b>7</b>    end
+<b>8</b>    
+<b>9</b>    fprintf ('Numbers is %f.\n')
+<b>10</b>    numbers
+<b>11</b>    fprintf ('The average is %f.\n')
+<b>12</b>    average = total(end) / size
+<b>13</b>    
+<b>14</b>    end
+<b>15</b>    
+<b>16</b>    % Nicholas Lees, nal43</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: maria.lesieutre@case.edu (3107267)<br>
+
+			
+				Filename: 3107267_problem1.m<br>
+				<pre class="codeinput"><b>1</b>    %Maria Lesieutre, mel102
+<b>2</b>    %Lab 3 Question 1 "For Loops"
+<b>3</b>    sum = 0;
+<b>4</b>    n = input ('how many numbers: ');
+<b>5</b>    for i = 1 : n
+<b>6</b>        x = input ('enter a number: ');
+<b>7</b>        sum = sum + x;
+<b>8</b>    end
+<b>9</b>    disp (sum)
+<b>10</b>    
+</pre>
+			
+				Filename: 3107267_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    %Maria Lesieutre, mel102
+<b>2</b>    %Lab 3, Question 2, Averages, Random Numbers, and For Loops
+<b>3</b>    function printAverage (size)
+<b>4</b>    numbers = rand (size, 1)
+<b>5</b>    average = 0
+<b>6</b>    for i = 1:size;
+<b>7</b>        average = (average + numbers(i)) / size;
+<b>8</b>    end 
+<b>9</b>    fprintf ('The average is %f.\n', average)
+<b>10</b>    
+<b>11</b>        
+</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: sari.kayyali@case.edu (3107265)<br>
+
+			
+				Filename: 3107265_Lab3_Problem1.m<br>
+				<pre class="codeinput"><b>1</b>    %Sari Kayyali, Sum Calculator
+<b>2</b>    v = [input('How many values?:')];
+<b>3</b>    sum = 0; % Cumulative sum
+<b>4</b>    for i = 1:v
+<b>5</b>        data = [input('Enter a value:')];
+<b>6</b>        sum = sum + data;
+<b>7</b>    end
+<b>8</b>    disp(sum)</pre>
+			
+				Filename: 3107265_Lab3_Problem2.m<br>
+				<pre class="codeinput"><b>1</b>    %Sari Kayyali, Random Number Average Calculator
+<b>2</b>    function printAverage(x)
+<b>3</b>    num = rand(x, 1)
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1:x;
+<b>6</b>        sum = sum + num(i);
+<b>7</b>    end
+<b>8</b>    Average = sum / x;
+<b>9</b>    fprintf('the average is %d.\n', Average)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: cyril.creque-sarbinowski@case.edu (3107263)<br>
+
+			
+				Filename: 3107263_sumofnumbers.m<br>
+				<pre class="codeinput"><b>1</b>    %Cyril Creque-Sarbinowski, cxc642
+<b>2</b>    sum = 0;
+<b>3</b>    data = [];
+<b>4</b>    beg = input ('How many numbers? ');
+<b>5</b>    if beg <= 0
+<b>6</b>        fprintf ('ERROR: You have entered a false amount of numbers\n')
+<b>7</b>    end
+<b>8</b>    % Tells how many numbers 
+<b>9</b>    for j = 1:beg;
+<b>10</b>    % Runs the loops the desired number of times
+<b>11</b>    num = input ('Enter a number: ');
+<b>12</b>    data(j) = num;
+<b>13</b>    % Places the number into an array
+<b>14</b>    end
+<b>15</b>    for i = 1:length(data);
+<b>16</b>        %Runs the loops to how many numbers entered
+<b>17</b>        sum = sum + data(i);
+<b>18</b>        %Computes Sum
+<b>19</b>    end
+<b>20</b>    if beg > 0
+<b>21</b>         fprintf ('The sum is %3f.\n', sum)
+<b>22</b>    end
+</pre>
+			
+				Filename: 3107263_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    %Cyril Creque-Sarbinowski, cxc642
+<b>2</b>    function printAverage(quantity)
+<b>3</b>    % This tells MATLAB how many numbers you want
+<b>4</b>    if quantity <= 0
+<b>5</b>        fprintf ('Error: False quantity entered.\n')
+<b>6</b>    else
+<b>7</b>    arr = rand(quantity, 1);
+<b>8</b>    % Creates an array with the desired quantity
+<b>9</b>    sum = 0;
+<b>10</b>    for i = 1:quantity;
+<b>11</b>        sum = sum + arr(i);
+<b>12</b>    end
+<b>13</b>    % Adds all the numbers in the array
+<b>14</b>    avg = sum / quantity;
+<b>15</b>    % Computes average
+<b>16</b>    fprintf ('The average is %f.\n', avg)
+<b>17</b>    end
+<b>18</b>    end</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: vivian.g.chen@case.edu (3107260)<br>
+
+			
+				Filename: 3107260_printaverage.m<br>
+				<pre class="codeinput"><b>1</b>    % Vivian Chen, vgc3
+<b>2</b>    % This script computes the average for a set of random numbers; the user
+<b>3</b>    % specifies the "size" of the set.
+<b>4</b>    
+<b>5</b>    function printaverage(size)
+<b>6</b>    num = rand(size, 1)
+<b>7</b>    sum = 0;
+<b>8</b>    for i = 1:length(num)
+<b>9</b>        sum = sum + num(i);
+<b>10</b>    end
+<b>11</b>    average = sum / length(num);
+<b>12</b>    fprintf('The average is %.4f\n', average)
+<b>13</b>    end</pre>
+			
+				Filename: 3107260_problem1.m<br>
+				<pre class="codeinput"><b>1</b>    % Vivian Chen, vgc3
+<b>2</b>    % This script finds the sum for a group of numbers. The script first
+<b>3</b>    % prompts the user to enter the amount of numbers in the group and then the
+<b>4</b>    % numbers one by one.
+<b>5</b>    
+<b>6</b>    sum = 0;
+<b>7</b>    amount = input('How many numbers?');
+<b>8</b>    numvec = zeros(1, amount);
+<b>9</b>    for iv = 1:amount
+<b>10</b>        inputnum = input('Enter a number:');
+<b>11</b>        numvec(iv) = inputnum;
+<b>12</b>        sum = sum + numvec(iv);
+<b>13</b>    end
+<b>14</b>    fprintf('The sum is %.1f.\n', sum)
+<b>15</b>        </pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: laura.childers@case.edu (3107261)<br>
+
+			
+				Filename: 3107261_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    % Laura Childers lmc131
+<b>2</b>    % This is a function to compute the average of (size) random
+<b>3</b>    %   numbers. It displays the random numbers and the average.
+<b>4</b>    function printAverage = printAverage(size)
+<b>5</b>    num = rand(1, size)
+<b>6</b>    average = (sum(num)) / size;
+<b>7</b>    fprintf('The average is %1.3f. \n', average)</pre>
+			
+				Filename: 3107261_Lab3Q1.m<br>
+				<pre class="codeinput"><b>1</b>    % Laura Childers lmc131
+<b>2</b>    % The following is a script that sums a quantity of numbers as
+<b>3</b>    %    determined by the user. Diplays sum and quantities entered.
+<b>4</b>    j = input('How many numbers? ');
+<b>5</b>    sum = 0;
+<b>6</b>    for i = 1:j;
+<b>7</b>        num = input('Enter a number: ');
+<b>8</b>        sum = num + sum;
+<b>9</b>    end
+<b>10</b>    fprintf('The sum is %d. \n',sum)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: Leung, Theodore (3107268)<br>
+
+			
+				Filename: 3107268_sumofinput.m<br>
+				<pre class="codeinput"><b>1</b>    %Theodore Leung, tfl15
+<b>2</b>    clear
+<b>3</b>    n = input('How many numbers? ');
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1:n
+<b>6</b>        i = input('Enter a number: ');
+<b>7</b>        sum = sum + i;
+<b>8</b>    end
+<b>9</b>    fprintf('The sum is %.1f\n', sum)</pre>
+			
+				Filename: 3107268_average.m<br>
+				<pre class="codeinput"><b>1</b>    %Theodore Leung, tfl15
+<b>2</b>    function average (numbers)
+<b>3</b>    clear
+<b>4</b>    sum = 0
+<b>5</b>    n = input('How many numbers? ')
+<b>6</b>    numbers = rand(1, n)
+<b>7</b>    for t = numbers
+<b>8</b>        sum = sum + t
+<b>9</b>    end
+<b>10</b>    R = sum / n;
+<b>11</b>    fprintf('The average is: %.3f\n', R)
+<b>12</b>    %The average SHOULD be (0+0.999999)/2 which is 0.499999, but it isn't
+<b>13</b>    %because smaller amounts of numbers allow for larger amounts of
+<b>14</b>    %discrepancy. With larger amounts of numbers, the average should come
+<b>15</b>    %close to 0.4999999.</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: sergio.martinez-rios@case.edu (3107269)<br>
+
+			
+				Filename: 3107269_printAverage.m<br>
+				<pre class="codeinput"><b>1</b>    % Sergio Martinez-Rios, sdm87@case.edu
+<b>2</b>    % Finds the average of random numbers
+<b>3</b>    function printAverage(numbers)
+<b>4</b>    sum= 0;
+<b>5</b>    num = rand(numbers, 1)
+<b>6</b>       for i = 1:length(num);            
+<b>7</b>         sum = sum + num(i);
+<b>8</b>       end 
+<b>9</b>       Average = sum / numbers;
+<b>10</b>         fprintf('The average is %f \n', Average)    
+<b>11</b>    
+<b>12</b>    
+<b>13</b>        
+<b>14</b>    
+</pre>
+			
+				Filename: 3107269_Lab3Problem1.m<br>
+				<pre class="codeinput"><b>1</b>    % Sergio Martinez-Rios, sdm87@case.edu
+<b>2</b>    % Asks the user for a quantity of numbers to be summed
+<b>3</b>    sum = 0; 
+<b>4</b>    count = input( 'How many numbers?:');
+<b>5</b>    for i = 1: count
+<b>6</b>        inputnum = input('Enter a Number:');
+<b>7</b>      sum = sum + inputnum;
+<b>8</b>    end
+<b>9</b>    fprintf('the sum is %d.\n', sum)
+<b>10</b>    
+<b>11</b>     
+</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: sparsh.agarwal@case.edu (3107257)<br>
+
+			
+				Filename: 3107257_average.m<br>
+				<pre class="codeinput"><b>1</b>    %sparsh agarwal
+<b>2</b>    %sxa468
+<b>3</b>    function a=average(size)
+<b>4</b>    num = rand(size,1)
+<b>5</b>    sum = 0;
+<b>6</b>    for i=1:length(num)
+<b>7</b>        sum = sum +num(i);
+<b>8</b>    end
+<b>9</b>    a= sum/size;
+<b>10</b>    
+<b>11</b>    
+<b>12</b>    
+</pre>
+			
+				Filename: 3107257_problem regarding 2 question.txt<br>
+				<pre class="codeinput"><b>1</b>    the second program is working but it shows not enough input arguments please try running the program and calling the function</pre>
+			
+				Filename: 3107257_lab3a.m<br>
+				<pre class="codeinput"><b>1</b>    %sparsh agarwal
+<b>2</b>    %sxa468
+<b>3</b>    total = input('how many no.? ');
+<b>4</b>    sum = 0;
+<b>5</b>    for i= 1:total;
+<b>6</b>        a =input('enter the no.= ');
+<b>7</b>        sum = sum + a;
+<b>8</b>    end
+<b>9</b>     disp(sum); </pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: michael.x.wu@case.edu (3107280)<br>
+
+			
+				Filename: 3107280_getaverage.m<br>
+				<pre class="codeinput"><b>1</b>    %Michael Wu, mxw373
+<b>2</b>    function getaverage(range)
+<b>3</b>    array = rand(range, 1)
+<b>4</b>    sum = 0;
+<b>5</b>    for i = 1:range;
+<b>6</b>        sum = sum + array(i);
+<b>7</b>    end
+<b>8</b>    avg = sum/range;
+<b>9</b>    fprintf('The average is %f\n', avg);</pre>
+			
+				Filename: 3107280_sumnum.m<br>
+				<pre class="codeinput"><b>1</b>    %Michael Wu, mxw373
+<b>2</b>    clear
+<b>3</b>    sum = 0;
+<b>4</b>    a = input('How many trials?');
+<b>5</b>    for i = 1:a
+<b>6</b>        number = input('Enter a number:');
+<b>7</b>        sum = sum + number;
+<b>8</b>    end
+<b>9</b>    fprintf('The sum is %f \n', sum)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+		<div class="content">
+			Email: cody.zimmerman@case.edu (3107281)<br>
+
+			
+				Filename: 3107281_RandomAverage.m<br>
+				<pre class="codeinput"><b>1</b>    function RandomAverage(numbers)
+<b>2</b>    clear
+<b>3</b>    sum = 0;
+<b>4</b>    n = input('How many Numbers?');
+<b>5</b>    numbers = rand(1, n)
+<b>6</b>    for t = numbers
+<b>7</b>        sum = sum + t;
+<b>8</b>    end
+<b>9</b>    sum = sum / n;
+<b>10</b>    fprintf('The average is %f.\n', sum)</pre>
+			
+				Filename: 3107281_Sumofnumbers.m<br>
+				<pre class="codeinput"><b>1</b>    % Cody Zimmerman, caz22
+<b>2</b>    % Quantity of numbers summed
+<b>3</b>    clear
+<b>4</b>    i = input('How many numbers?');
+<b>5</b>    sum = 0;
+<b>6</b>    for a = 1:i;
+<b>7</b>        data = input('Enter a number: ');
+<b>8</b>                sum = sum + i;
+<b>9</b>       end
+<b>10</b>    fprintf('The sum is %f\n', sum)</pre>
+			
+
+			<p class="footer"><br><br></p>
+		</div>
+	
+	</body>
+</html>
+

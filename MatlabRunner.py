@@ -21,9 +21,9 @@ class MATLABRunner:
         Optionally accepts a path to append to the MATLABPATH, so arbitrary
         user functions can be used.
         '''
-        matlab_str = "path('"+path+"',path); " + matlab_str + "; exit;"
+        matlab_str =  matlab_str + "; exit;"
         cmd = [MATLAB_PATH] + MATLAB_ARGS + ['-r', matlab_str]
-	status, out, err = self.execute_command(cmd,
+        status, out, err = self.execute_command(cmd,
                 timeout=90,
                 options={'MATLABPATH': path})
         if status == 0:
@@ -93,7 +93,8 @@ class TimeoutException(Exception):
 if __name__ == '__main__':
     mlr = MATLABRunner()
     #print mlr.run_matlab("disp('hi')")
-    res = mlr.publish_matlab("x=-1:0.1:1;y=sin(x);plot(x,y);");
+    #res = mlr.publish_matlab("x=-1:0.1:1;y=sin(x);plot(x,y);");
+    res = mlr.publish_matlab("input('Is this a test?')");
     print res
     output = open('output', 'w')
     output.write(res)

@@ -1,0 +1,44 @@
+#titlebox {
+	position: left;
+	width: auto;
+	height: auto;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 32px;
+	font-weight: bold;
+	margin-top: 20px;
+	font-family: arial;
+	}
+
+#program_title_border {
+	margin-top: 10px;
+	position: left;
+	width: auto;
+	height: auto;
+	margin: 5px 5px 5px 5px;
+	border-style: solid;
+	border-width: 1px;
+	}	
+	
+#program_title_box {
+	vertical-align: middle;
+	margin: 5px 5px 5px 5px;
+	font-weight: bold;
+	font-size: 24px;
+	}
+
+#codebox_border {
+	position: left;
+	width: auto;
+	height: auto;
+	margin: 5px 5px 5px 5px;
+	border-style: solid;
+	border-width: 1px;
+	}
+	
+#codebox {
+	margin: 5px 5px 5px 5px;
+	font-weight: normal;
+	font-size: 16px;
+	}
+	

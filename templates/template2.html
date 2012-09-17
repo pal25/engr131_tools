@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<link href="style2.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+	{% for student in students %}
+		<div class="content">
+			Email: {{student.name}} ({{student.sid}})<br>
+
+			{% for program in student.code %}
+				Filename: {{program.file}}<br>
+				<pre class="codeinput">{{program.content}}</pre>
+			{% endfor %}
+
+			<p class="footer"><br><br></p>
+		</div>
+	{% endfor %}
+	</body>
+</html>
+
+
