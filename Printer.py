@@ -22,6 +22,8 @@ def print_to_html(directory):
 			count = 1
 
 			for line in input:
+				line = line.decode('utf-8', 'replace')
+				line = line.encode('ascii', 'replace')
 				content += '<b>%d</b>    %s' % (count, line)
 				count += 1
 			code = _Code(os.path.split(filename)[1], content)
@@ -29,8 +31,9 @@ def print_to_html(directory):
 
 	students = []
 	for key in student_table:
-		students.append(student_table[key])
-	students.sort()
+		if len(student_table[key].files) is not 0:
+			students.append(student_table[key])
+	students.sort(key=lambda x: x.name.lower())
 	
 	env = Environment()
 	env.loader = FileSystemLoader('.')

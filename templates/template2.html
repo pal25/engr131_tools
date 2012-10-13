@@ -9,12 +9,14 @@
 			Email: {{student.name}} ({{student.sid}})<br>
 
 			{% for program in student.code %}
-				Filename: {{program.file}}<br>
+				Filename: {{program.file}} || Score: <br>
 				<pre class="codeinput">{{program.content}}</pre>
 			{% endfor %}
 
 			<p class="footer"><br><br></p>
 		</div>
+
+		<div class="page-break"></div>
 	{% endfor %}
 	</body>
 </html>
